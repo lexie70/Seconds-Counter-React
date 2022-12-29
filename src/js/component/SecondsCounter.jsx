@@ -1,18 +1,19 @@
 import React from "react";
-
+//  con el props que es un short para properties podemos usar informacion declarada en el parent element
+// podemos usar elementos declarados de un parent a un child
 
 const SecondsCounter = (props) => {
 
     return(
-        <div className="app d-flex justify-content-center">
-            <div className=" box icon"><p className="far fa-clock"></p></div>
-            <div className=" box">{props.horaDecena}</div>
-            <div className=" box">{props.horaUnit}</div>
-            <div className=" box">{props.minutoDecena}</div>
-            <div className=" box">{props.minutoUnit}</div>
-            <div className=" box">{props.decenas}</div>
-            <div className=" box">{props.unit}</div>
-        </div>
+        <span className="app d-flex justify-content-center text-bg-dark p-3 fs-1 ">
+            <div className=" box icon"><p className="far fa-clock me-3"></p></div>
+            <div className=" box me-3">{props.horaDecena}</div>
+            <div className=" box me-3">{props.hora}</div>
+            <div className=" box me-3">{props.minutoDecena}</div>
+            <div className=" box me-3">{props.minuto}</div>
+            <div className=" box me-3">{props.decenasSegundos}</div>
+            <div className=" box me-3">{props.segundos}</div>
+        </span>
     )
 };
 
